@@ -1,2 +1,5 @@
-# brendengifford.github.io
-Blog posts ramblings and information about me, but mostly a place I can keep track of stuff I'm interested in and play around
+# Brenden Gifford's Website
+
+Hey it's my site! I built it using [Jekyll](http://jekyllrb.com/) and am hosting it on [GitHub Pages](https://pages.github.com/). 
+
+RAD!
