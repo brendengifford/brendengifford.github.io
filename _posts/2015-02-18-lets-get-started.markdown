@@ -2,6 +2,7 @@
 layout: post
 title:  "Let's get started!"
 date:   2015-02-18 
+category: sitelog
 ---
 Here we go!
 
