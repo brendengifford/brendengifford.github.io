@@ -11,7 +11,3 @@ github_username:  brendengifford
 
 # Build settings
 markdown: kramdown
-
-# Sass settings
-sass:
-  style: compressed
