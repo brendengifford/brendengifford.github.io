@@ -21,5 +21,7 @@ How's that look?
 
 Stoked to try out some more stuff. For now I'm going to post this and see what's up!
 
+<!--links-->
+
 [jekyll]:       http://jekyllrb.com
 [github-pages]: https://pages.github.com/
