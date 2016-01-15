@@ -11,7 +11,7 @@ It was stupid simple to set up. Went to Google Analytics, added [brendengifford.
 
 That's all I wanted to do for now. 
 
-I'm downloading my old website from 2011 so I can finally cancel my hosting plan. Just found the favicon I made for it: ![The favicon of my old website]({{ site.url }}/img/old-site-favicon.png) I'd like to think I've moved on from poop humor, but I would be wrong -- it still cracks me up.
+I'm downloading my old website from 2011 so I can finally cancel my hosting plan. Just found the favicon I made for it: ![The favicon of my old website]({{ site.url }}/img/old-sites-favicon.png) I'd like to think I've moved on from poop humor, but I would be wrong -- it still cracks me up.
 
 [me]: 	https://brendengifford.github.io
 [so]: 	http://stackoverflow.com/questions/6824095/#answer-6824155
