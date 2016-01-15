@@ -74,7 +74,7 @@ So, in the [last post][last-post] I mentioned [figuring out the live reload][liv
 
 **Did it work?**
 
-It appears to be working! I can't believe it! Props to this [stackoverflow question][stackoverflow-question2] for finally giving me a working method. I have to run two command prompts, jekyll server in one, and in the other, bundle exec guard (with live reload in the Guardfile). Woof. What a pain. Looks like [using grunt to set up live reload][live-reload2] might have been a better way to go -- just so I could do it with one command pompt. Maybe I'll refactor later. 
+It appears to be working! I can't believe it! Props to this [stackoverflow question][stackoverflow-question2] for finally giving me a working method. I have to run two command prompts, `jekyll server` in one, and in the other, `bundle exec guard` (with live reload in the Guardfile). Woof. What a pain. Looks like [using grunt to set up live reload][live-reload2] might have been a better way to go -- just so I could do it with one command pompt. Maybe I'll refactor later. 
 
 ###Things I'd like to do.
 
