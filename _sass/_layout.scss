@@ -5,28 +5,164 @@
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-
+    
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    font-size: 26px;
+    font-family: "Russo One", Helvetica, sans-serif;
+    font-size: 3em;
+    text-decoration: none;
+    font-size: 32px;
+    font-family: $site-title-font-family;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $black;
+    }
+    &:hover  {
+        text-decoration: none;
+        text-shadow:
+            -1px -1px 0 $green,  
+            1px -1px 0 $red,
+            -1px 1px 0 $blue,
+            1px 1px 0 $yellow;
+        -webkit-animation: boder-shift 1s infinite;
+        -moz-animation: boder-shift 1s infinite;
+        -ms-animation: boder-shift 1s infinite;
+        animation: boder-shift 1s infinite;
     }
 }
-
+@-webkit-keyframes boder-shift {
+    0% {
+        text-shadow:
+            -1px -1px 0 $green,  
+            1px -1px 0 $red,
+            -1px 1px 0 $blue,
+            1px 1px 0 $yellow;
+    }
+    25% {
+        text-shadow:
+            -1px -1px 0 $blue,  
+            1px -1px 0 $green,
+            -1px 1px 0 $yellow,
+            1px 1px 0 $red;
+    }
+    50% {
+        text-shadow:
+            -1px -1px 0 $yellow,  
+            1px -1px 0 $blue,
+            -1px 1px 0 $red,
+            1px 1px 0 $green;
+    }
+    75% {
+        text-shadow:
+            -1px -1px 0 $red,  
+            1px -1px 0 $yellow,
+            -1px 1px 0 $green,
+            1px 1px 0 $blue;
+    }
+}
+@-moz-keyframes boder-shift {
+    0% {
+        text-shadow:
+            -1px -1px 0 $green,  
+            1px -1px 0 $red,
+            -1px 1px 0 $blue,
+            1px 1px 0 $yellow;
+    }
+    25% {
+        text-shadow:
+            -1px -1px 0 $blue,  
+            1px -1px 0 $green,
+            -1px 1px 0 $yellow,
+            1px 1px 0 $red;
+    }
+    50% {
+        text-shadow:
+            -1px -1px 0 $yellow,  
+            1px -1px 0 $blue,
+            -1px 1px 0 $red,
+            1px 1px 0 $green;
+    }
+    75% {
+        text-shadow:
+            -1px -1px 0 $red,  
+            1px -1px 0 $yellow,
+            -1px 1px 0 $green,
+            1px 1px 0 $blue;
+    }
+}
+@-ms-keyframes boder-shift {
+    0% {
+        text-shadow:
+            -1px -1px 0 $green,  
+            1px -1px 0 $red,
+            -1px 1px 0 $blue,
+            1px 1px 0 $yellow;
+    }
+    25% {
+        text-shadow:
+            -1px -1px 0 $blue,  
+            1px -1px 0 $green,
+            -1px 1px 0 $yellow,
+            1px 1px 0 $red;
+    }
+    50% {
+        text-shadow:
+            -1px -1px 0 $yellow,  
+            1px -1px 0 $blue,
+            -1px 1px 0 $red,
+            1px 1px 0 $green;
+    }
+    75% {
+        text-shadow:
+            -1px -1px 0 $red,  
+            1px -1px 0 $yellow,
+            -1px 1px 0 $green,
+            1px 1px 0 $blue;
+    }
+}
+@keyframes boder-shift {
+    0% {
+        text-shadow:
+            -1px -1px 0 $green,  
+            1px -1px 0 $red,
+            -1px 1px 0 $blue,
+            1px 1px 0 $yellow;
+    }
+    25% {
+        text-shadow:
+            -1px -1px 0 $blue,  
+            1px -1px 0 $green,
+            -1px 1px 0 $yellow,
+            1px 1px 0 $red;
+    }
+    50% {
+        text-shadow:
+            -1px -1px 0 $yellow,  
+            1px -1px 0 $blue,
+            -1px 1px 0 $red,
+            1px 1px 0 $green;
+    }
+    75% {
+        text-shadow:
+            -1px -1px 0 $red,  
+            1px -1px 0 $yellow,
+            -1px 1px 0 $green,
+            1px 1px 0 $blue;
+    }
+}
 .site-nav {
     float: right;
     line-height: 56px;
-
+    
     .menu-icon {
         display: none;
     }
@@ -34,6 +170,8 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        font-weight: bold;
+        text-transform: lowercase;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -97,6 +235,9 @@
 }
 
 .footer-heading {
+    @extend .site-title;
+    float: none;
+    line-height: initial;
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
 }
@@ -121,8 +262,8 @@
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+    width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
@@ -131,8 +272,8 @@
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
